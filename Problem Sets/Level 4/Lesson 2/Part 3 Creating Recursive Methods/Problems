@@ -1,6 +1,15 @@
 1. Create a method that takes as input an integer n and prints "1" F(n) times, where F(n) is the nth fibonacci number.
 For example, if n = 6, then "1" should be printed 8 times.
 
+public static long Fibonacci( int n )
+{
+  if {n == 1 || n == 2}
+  return Fibonacci (n - 1 ) + Fibonacci ( n - 2);
+  
+  method p1
+  return p1(n)
+}
+
 2. If we denote n choose k by c(n, k), then c(n, k) = c(n - 1, k - 1) + c(n - 1, k) always holds.
 Also, c(n, 0) = 1 always holds. Finally, c(n, k) = 0 whenever n < k.
 Create a recursive method that takes two integers n and k (assume they are positive) and returns n choose k.
