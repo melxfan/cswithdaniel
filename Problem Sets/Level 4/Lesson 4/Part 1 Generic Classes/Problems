@@ -1,9 +1,49 @@
 1. What are the advantages of using generic classes?
-
+/*
+Stronger type checks at compile time. A Java compiler applies strong type 
+checking to generic code and issues errors if the code violates type safety. 
+Fixing compile-time errors is easier than fixing runtime errors, which can 
+be difficult to find.
+*/
 2. Create a generic class named Triple that has 3 type parameters and a variable for each type parameter.
 Create a constructor that sets those variables.
 Create get and set methods for each variable.
-
+/*
+class Triple <A, B, C>
+{
+    public A = first;
+    public B = second; 
+    public C = third; 
+    public Triple = (A a, B b, C c);
+    {
+    public void setFirst (A a)
+    {
+        first = a;
+     }
+     public A getFirst()
+     {
+        return first;
+     }
+     
+     public void setSecond (B b)
+     {
+        second = b;
+     }
+     public B getSecond ()
+     {
+        return second;
+     }
+     
+     public void setThird (C c)
+     {
+        third = c;
+     }
+     public C getThird ()
+     {
+        return third;
+     }
+}
+*/
 3. Create a method named size in the MyArray class (see the video lesson) that returns the length of the array.
 
 4. Create a method named add in the MyArray class that takes an index and a value and inserts the value into the array at the index.
@@ -21,7 +61,10 @@ public Pair
 { 
     A first;
     B second;
-    public Pair<A, B>(A a, B b)
+    public Pair<A, B>
+    public A = first;
+    public B = second;
+    public Par(A a, B b)
     {
         a = first;
         b = second;
@@ -31,9 +74,17 @@ public Pair
         first = a;
         second = b;
     }
+    public void setFirst (A a)
+    {
+        first = a;
+    }
     public A getFirst()
     {
         return first;
+    }
+    public void setSecond (B, b)
+    {
+        second = b
     }
     public B getSecond()
     {
@@ -43,6 +94,8 @@ public Pair
 
 9.
   a. Why should a class such as Rectangle not be generic?
+  //It only serves for Rectangles and not any other quadrilateral
+  //so it cannot be classified as generic. 
   b. Consider the following code:
   
   class Rectangle<A, B>
@@ -63,3 +116,4 @@ public Pair
   Are you allowed to do the following without errors:
   Rectangle<Integer, Integer> r = new Rectangle<Integer, Integer>(5, 7);
   System.out.println(r.area());
+  //yes
