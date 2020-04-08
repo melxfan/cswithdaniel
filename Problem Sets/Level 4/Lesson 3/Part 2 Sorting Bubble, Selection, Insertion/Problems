@@ -14,6 +14,12 @@
   less than the number of items in the array.
   */
   c. Explain how insertion sort works in general.
+  /*
+  Insertion sort is a simple sorting algorithm that builds the 
+  final sorted array (or list) one item at a time. It is much 
+  less efficient on large lists than more advanced algorithms 
+  such as quicksort, heapsort, or merge sort.
+  */
 
 2. Perform bubble sort, selection sort, and insertion sort manually on the array {6, 9, 8, 4, 1}.
 
