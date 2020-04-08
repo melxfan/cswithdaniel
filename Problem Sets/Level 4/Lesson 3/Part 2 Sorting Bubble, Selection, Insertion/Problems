@@ -1,6 +1,18 @@
 1.
   a. Explain how bubble sort works in general.
+  /*
+  A bubble sort works by comparing adjacent pairs of objects in 
+  the array. If the objects are not in the correct ordered, 
+  they are swapped so that the largest of the two moves up.
+  */
   b. Explain how selection sort works in general.
+  /*
+  The selection sort is a combination of searching and sorting. 
+  During each pass, the unsorted element with the smallest 
+  (or largest) value is moved to its proper position in the array. 
+  The number of times the sort passes through the array is one 
+  less than the number of items in the array.
+  */
   c. Explain how insertion sort works in general.
 
 2. Perform bubble sort, selection sort, and insertion sort manually on the array {6, 9, 8, 4, 1}.
