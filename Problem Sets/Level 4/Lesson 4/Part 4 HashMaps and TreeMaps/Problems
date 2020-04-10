@@ -18,16 +18,64 @@ public class Main
         System.out.println(h.size());
     }
 }
-
+/*
+qwe
+okm
+123
+123
+abc def
+a a qwe
+a a okm
+a a zxc
+qwe 123
+*/
 2. Create a method that takes a HashMap<Integer, Integer> and returns the sum of the keys of the HashMap.
-
+/*
+{
+    public static void main(String[] args)
+    {
+        HashMap<Integer, Integer> h = new HashMap<Integer, Integer>();
+        h.put("5", "7");
+        h.put("3", "12");
+        System.out.println(h.containsKey("5"));
+        System.out.println(h.containsKey(" 7"));
+        System.out.println(h.size());
+    }
+}
+*/
 3. Create a method that takes a HashMap<Integer, Integer> and returns the sum of all keys and values of the HashMap.
 For example, if the input is [1=9, 3=6, 4=9, 6=8, 7=6] then the method should return 59.
+/*
+{
+    public static void main(String[] args)
+    {
+        HashMap<Integer, Integer> h = new HashMap<Integer, Integer>();
+        h.put("1", "9");
+        h.put("3", "6");
+        h.put("4", "9");
+        h.put("6", "8"); 
+        h.put("7", "6");
+        System.out.println(h.size());
+    }
+}
+*/
 
 4. Create a method that takes a HashMap<String, Integer> and removes all mappings with value less than or equal to 0.
 For example, if the input is ["abc"=5, "qwe"=0, "asd"=7, "zxc"=9, "iop"=-2], then the resulting HashMap should be
 ["abc"=5, "asd"=7, "zxc"=9].
-
+{
+    public static void main(String[] args)
+    {
+        HashMap<String, String> h = new HashMap<String, String>();
+        h.remove(String <= 0());
+        h.put("abc", "5");
+        h.put("0", "qwe");
+        h.put("asd ", "7");
+        h.put("9", "zxc");
+        h.put("iop", "-2");
+        System.out.println(h.size());
+    }
+}
 
 5. Create a generic class named MultiHashSet that acts like a HashSet that can contain multiple elements of the same value.
 You should have these methods:
